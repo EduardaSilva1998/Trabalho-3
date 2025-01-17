@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige; 
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.legenda {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+.legenda li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.legenda .cor {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legenda .cor.disponivel {
+    background-color: green; 
+}
+
+.legenda .cor.reservado {
+    background-color: red; 
+}
+
+.legenda .cor.em-uso {
+    background-color: gray; 
+}
+
+.mesa {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mesa[data-status="disponivel"] {
+    background-color: green; 
+}
+
+.mesa[data-status="reservado"] {
+    background-color: red; 
+}
+
+.mesa[data-status="em-uso"] {
+    background-color: gray; 
+}
